@@ -2,6 +2,14 @@
 
 A Kotlin-based Spring Boot 3.5 application for ETL data processing with tenant-specific API key authentication.
 
+This Demo showcases to create a domain specific Import Object (here PlanningDto) to validate and store it for 
+processing. You can add more and different Domains by adding: Controllers, Services and DTOs.
+
+A Scheduler ensures that a maximum number of import object is collected to forward a batch of objects (simulated via 
+logging).
+
+The delivering tenant is validated via Spring Security API Key Endpoint Protection.
+
 ## Project Structure
 
 ```
