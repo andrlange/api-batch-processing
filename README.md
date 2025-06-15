@@ -164,7 +164,7 @@ X-API-Key: api-key-tenant-001-secret-12345
 }
 ```
 
-#### 2. Update Planning (PUT)
+#### 2. CREATE Planning (PUT)
 ```http
 PUT /api/v1/planning?paramOne=value1&paramTwo=value2
 Content-Type: application/json
