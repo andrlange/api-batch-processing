@@ -29,7 +29,9 @@ curl -X POST \
     "year": 2024,
     "month": 6,
     "day": 15,
-    "location": "Hamburg Office"
+    "location": "Hamburg Office",
+    "paramOne": "value1",
+    "paramTwo": "value2"
   }' \
   http://localhost:8080/api/v1/planning
 ```
@@ -72,7 +74,9 @@ curl -X POST \
     "year": 2019,
     "month": 13,
     "day": 32,
-    "location": ""
+    "location": "",
+    "paramOne": "value1",
+    "paramTwo": "value2"
   }' \
   http://localhost:8080/api/v1/planning
 ```
@@ -103,7 +107,9 @@ curl -X POST \
     "year": 2024,
     "month": 6,
     "day": 15,
-    "location": "Hamburg Office"
+    "location": "Hamburg Office",
+    "paramOne": "value1",
+    "paramTwo": "value2"
   }' \
   http://localhost:8080/api/v1/planning
 ```

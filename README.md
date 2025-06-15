@@ -150,7 +150,9 @@ X-API-Key: api-key-tenant-001-secret-12345
   "year": 2024,
   "month": 6,
   "day": 15,
-  "location": "Hamburg Office"
+  "location": "Hamburg Office",
+  "paramOne": "value1",
+  "paramTwo": "value2"
 }
 ```
 
