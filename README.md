@@ -32,12 +32,12 @@ src
 │   │                  ├── ProcessingService.kt
 │   │                  ├── dto
 │   │                  │   ├── ApiResponseDto.kt
-│   │                  │   ├── PlanningDto.kt
 │   │                  │   └── ValidationErrorResponseDto.kt
 │   │                  ├── models
 │   │                  │   └── ImportPublications.kt
 │   │                  └── planning
 │   │                      ├── PlanningController.kt
+│   │                  │   ├── PlanningDto.kt
 │   │                      └── PlanningService.kt
 │   └── resources
 │       ├── application-dev.yml

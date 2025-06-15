@@ -3,7 +3,7 @@ package cool.cfapps.apibatchprocessing.importermodule.planning
 import com.fasterxml.jackson.databind.ObjectMapper
 import cool.cfapps.apibatchprocessing.config.security.SecurityContextHelper
 import cool.cfapps.apibatchprocessing.importermodule.ImportPublicationsRepository
-import cool.cfapps.apibatchprocessing.importermodule.dto.PlanningDto
+import cool.cfapps.apibatchprocessing.importermodule.planning.PlanningDto
 import cool.cfapps.apibatchprocessing.importermodule.models.ImportPublications
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service

@@ -1,6 +1,9 @@
-package cool.cfapps.apibatchprocessing.importermodule.dto
+package cool.cfapps.apibatchprocessing.importermodule.planning
 
-import jakarta.validation.constraints.*
+import jakarta.validation.constraints.Max
+import jakarta.validation.constraints.Min
+import jakarta.validation.constraints.NotBlank
+import jakarta.validation.constraints.Size
 
 data class PlanningDto(
     @field:NotBlank(message = "Business unit cannot be blank")

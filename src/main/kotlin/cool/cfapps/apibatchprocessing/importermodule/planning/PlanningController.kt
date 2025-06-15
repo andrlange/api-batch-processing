@@ -1,6 +1,6 @@
 package cool.cfapps.apibatchprocessing.importermodule.planning
 
-import cool.cfapps.apibatchprocessing.importermodule.dto.PlanningDto
+import cool.cfapps.apibatchprocessing.importermodule.planning.PlanningDto
 import cool.cfapps.apibatchprocessing.importermodule.dto.ApiResponseDto
 import cool.cfapps.apibatchprocessing.importermodule.dto.ValidationErrorResponseDto
 import jakarta.validation.Valid
