@@ -1,0 +1,21 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/etl_db_prod}
+    username: ${DB_USERNAME:etl_user}
+    password: ${DB_PASSWORD:etl_password}
+
+logging:
+  level:
+    cool.cfapps.apibatchprocessing: WARN
+    org.springframework.security: WARN
+
+app:
+  security:
+    api-keys:
+      ${TENANT_001_ID:tenant-001}: "${TENANT_001_API_KEY:api-key-tenant-001-secret-12345}"
+      ${TENANT_002_ID:tenant-002}: "${TENANT_002_API_KEY:api-key-tenant-002-secret-67890}"
+      ${TENANT_003_ID:tenant-003}: "${TENANT_003_API_KEY:api-key-tenant-003-secret-abcde}"

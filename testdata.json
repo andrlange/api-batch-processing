@@ -1,0 +1,10 @@
+{
+  "businessUnit": "Engineering",
+  "resourceName": "Jane Doe",
+  "year": 2025,
+  "month": 6,
+  "day": 16,
+  "location": "Hamburg Office",
+  "paramOne": "value1",
+  "paramTwo": "value2"
+}

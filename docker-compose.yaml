@@ -1,0 +1,28 @@
+services:
+  postgresql:
+    image: postgres:17-alpine
+    container_name: postgresql
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: etl_user
+      POSTGRES_PASSWORD: etl_password
+      POSTGRES_DB: etl_db
+      PGDATA: /var/lib/postgres/data
+    volumes:
+      - './vols/postgresql_etl:/var/lib/postgres/data'
+    ports:
+      - "5432:5432"
+
+  pgadmin:
+    image: dpage/pgadmin4:9.4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: user@example.de
+      PGADMIN_DEFAULT_PASSWORD: password
+    volumes:
+      - './vols/pgadmin_etl_data:/etc/pgadmin/'
+      - './vols/pgadmin_etl_config:/var/lib/pgadmin/'
+    ports:
+      - "5555:80"
+    depends_on:
+      - postgresql
+

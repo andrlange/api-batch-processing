@@ -1,0 +1,12 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/etl_db_dev
+
+logging:
+  level:
+    cool.cfapps.apibatchprocessing: DEBUG
+    org.springframework.security: TRACE

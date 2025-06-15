@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: api-batch-processing
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/etl_db
+    username: etl_user
+    password: etl_password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        show-sql: false
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    deserialization:
+      fail-on-unknown-properties: false
+
+  threads:
+    virtual:
+      enabled: true
+
+logging:
+  level:
+    cool.cfapps.apibatchprocessing: INFO
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+
+app:
+  security:
+    api-keys:
+      tenant-001: "api-key-tenant-001-secret-12345"
+      tenant-002: "api-key-tenant-002-secret-67890"
+      tenant-003: "api-key-tenant-003-secret-abcde"
+
+
